@@ -1,8 +1,6 @@
 **Recommended Running Environment:**
 
-Labtainer VM, Ubuntu 16.04. There are known bugs with Debian and we have also experienced issues on Ubuntu 18.04.
-
-The paths to our lists are currently hardcoded, so this repository should be cloned at home/student into home/student/RubbberDuckAntiVirus.
+Ubuntu 16.04/18.04.
 
 **Required Packages for Download:**
 
@@ -15,9 +13,5 @@ pipenv install requests
 
 **Compilation:**
 
-Run bash make.sh inside /home/student/RubbberDuckAntiVirus, which will create the Rubberduck executable.
-
-**Execution:**
-
-It is recommmended to run ./Rubberduck as the root user.
+Run bash make.sh inside /RubbberDuckAntiVirus, which will create the Rubberduck executable.
 
