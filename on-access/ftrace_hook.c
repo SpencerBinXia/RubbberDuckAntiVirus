@@ -238,10 +238,6 @@ static char *duplicate_filename(const char __user *filename)
 asmlinkage int (*getuid_call)(void);
 
 
-/**
- * The sys_open calls are commented out due to issues we ran into testing them on our machines.
- *
- *
 static asmlinkage int (*real_sys_open)(const char __user *filename, int flags, int mode);
 
 static asmlinkage int fh_sys_open(const char __user *filename, int flags, int mode)
@@ -258,7 +254,6 @@ static asmlinkage int fh_sys_open(const char __user *filename, int flags, int mo
 
 	return ret;
 }
-**/
 
 static asmlinkage long (*real_sys_execve)(const char __user *filename,
 		const char __user *const __user *argv,
